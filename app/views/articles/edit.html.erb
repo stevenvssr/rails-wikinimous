@@ -1,0 +1,11 @@
+<h1>Update article</h1>
+
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
+<button type="button" class="btn btn-dark btn-lg"><%= link_to "Back to articles", "http://localhost:3000" %></button>

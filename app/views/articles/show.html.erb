@@ -1,0 +1,10 @@
+<h1> <%= @article.title %> </h1>
+
+<p> <%= @article.content %>  </p>
+
+<button type="button" class="btn btn-dark btn-lg"><%= link_to "Edit this article", edit_article_path %></button>
+<button type="button" class="btn btn-dark btn-lg"><%= link_to "Back to articles", "http://localhost:3000" %></button>
+
+
+<button type="button" class="btn btn-danger btn-lg"><%= link_to "Delete", article_path, method: :delete,
+                        data: { confirm: 'Are you sure?' }  %></button>
